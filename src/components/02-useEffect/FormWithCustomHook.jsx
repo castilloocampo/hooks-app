@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './effects.css'
 
 import UseForm from '../../hooks/useForm';
 
@@ -27,21 +26,21 @@ const FormWithCustomHook = () => {
       <h1>FormWithCustomHook</h1>
       <hr />
 
-      <div className="form-group">
+      <div className='pt-3'>
         <input
           type="text"
           name="name"
-          className="form-control"
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Tu nombre"
           autoComplete="off"
           value={name}
           onChange={handleInputChange} />
       </div>
-      <div className="form-group">
+      <div>
         <input
           type="email"
           name="email"
-          className="form-control"
+          className="focus:outline-none focus:shadow-outline"
           placeholder="email@mail.com"
           autoComplete="off"
           value={email}
@@ -51,13 +50,13 @@ const FormWithCustomHook = () => {
         <input
           type="password"
           name="password"
-          className="form-control"
+          className="focus:outline-none focus:shadow-outline"
           placeholder="******"
           autoComplete="off"
           value={password}
           onChange={handleInputChange} />
       </div>
-      <button type="submit" className="btn btn-secondary"> Guardar </button>
+      <button type="submit"> Guardar </button>
     </form>
   );
 }

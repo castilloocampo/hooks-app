@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply p-[75px]
+  }
+
+  h1 {
+    @apply text-5xl ;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+  }
+
+  button[type='submit'] {
+    @apply rounded-full mt-4 px-4 py-2 font-semibold text-sm bg-sky-500 text-white shadow-xl;
+  }
+}
