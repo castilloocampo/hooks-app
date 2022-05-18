@@ -4,7 +4,11 @@
 
 @layer base {
   body {
-    @apply p-[75px]
+    @apply p-75px
+  }
+
+  hr {
+    @apply my-5
   }
 
   h1 {

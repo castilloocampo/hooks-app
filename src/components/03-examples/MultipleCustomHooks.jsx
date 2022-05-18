@@ -1,15 +1,12 @@
-import React from 'react';
+import { useRef } from 'react';
 import useFetch from '../../hooks/useFetch';
 import useCounter from '../../hooks/useCounter';
 
 const MultipleCustomHooks = () => {
-
   const { counter, increment } = useCounter(1);
   const { loading, data } = useFetch(`https://breakingbadapi.com/api/quotes/${counter}`);
 
   const { author, quote } = !!data && data[0];
-  console.log(data);
-
   return (
     <div>
       <h1 className=''>BreakingBad Quotes</h1>
@@ -17,11 +14,11 @@ const MultipleCustomHooks = () => {
 
       {
         loading ? (
-          <div className='relative px-3 py-3 mb-4 border rounded bg-teal-200 border-teal-300 text-teal-800 text-center animate__animated animate__fadeOutLeft' >
+          <div className={`relative px-3 py-3 mb-4 border rounded bg-teal-200 border-teal-300 text-teal-800 text-center animate__animated animate__fadeOutLeft animate__slower`} >
             Loading
           </div>
         ) : (
-          <blockquote className={`mb-6 text-lg text-right animate__animated ${loading ? 'animate__fadeOut animate__delay-1s' : 'animate__fadeIn animate__delay-0.5s'} h-14`}>
+          <blockquote className={`mb-6 text-lg text-right animate__animated ${loading ? 'animate__fadeOut animate__delay-1s' : 'animate__fadeIn'} h-14`}>
             <p className='mb-0'> {quote} </p>
             <footer className='block text-gray-400'> –– {author} </footer>
           </blockquote>
