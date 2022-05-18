@@ -4,11 +4,12 @@
 
 @layer base {
   body {
-    @apply p-75px
+    @apply p-75px;
+    @apply bg-slate-500;
   }
 
   hr {
-    @apply my-5
+    @apply my-5;
   }
 
   h1 {
