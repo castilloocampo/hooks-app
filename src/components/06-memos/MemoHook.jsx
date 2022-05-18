@@ -1,17 +1,14 @@
 import { useMemo, useState } from 'react';
 import useCounter from '../../hooks/useCounter';
 import { heavyProcess } from '../../helpers/heavyProcess';
-import Small from './Small';
+// import Small from './Small';
 
 const MemorHook = () => {
   const { counter, increment } = useCounter(5000);
   const [show, setShow] = useState(true)
   const memoizedHeavyProcess = useMemo(() => heavyProcess(counter), [counter])
   // const memoizedSmallComponent = useMemo(() => <Small value={counter}/>, [counter])
-
   
-
-
   return (
     <div>
       <h1>Memorize</h1>

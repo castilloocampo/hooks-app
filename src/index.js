@@ -13,7 +13,8 @@ import './index.css';
 // import RealExampleRef from './components/04-useRef/RealExampleRef';
 // import LayoutEffect from './components/05-useLayoutEffect/LayoutEffect';
 // import Memorize from './components/06-memos/Memorize';
-import MemoHook from './components/06-memos/MemoHook';
+// import MemoHook from './components/06-memos/MemoHook';
+import CallbackHook from './components/06-memos/CallbackHook';
 
 
 
@@ -21,6 +22,6 @@ import MemoHook from './components/06-memos/MemoHook';
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-  <MemoHook />
+  <CallbackHook />
 );
 
