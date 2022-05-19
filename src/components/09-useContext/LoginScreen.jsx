@@ -1,20 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
+import React, { useContext } from 'react';
+import { UserContext } from './UserContext';
 
 const LoginScreen = () => {
+  const { user, setUser} = useContext(UserContext);
+
+  const handleLogin = () => setUser({
+    id: new Date().getTime(),
+    name: "Mario Castillo",
+    email: "mariotl9752@gmail.com"
+  });
+
   return (
     <div>
       <h1>LoginScreen</h1>
       <hr />
+      <button 
+        className='btn btn-primary'
+        onClick={handleLogin} >Login</button>
     </div>
   );
 };
-
-
-LoginScreen.propTypes = {
-
-};
-
 
 export default LoginScreen;
