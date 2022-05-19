@@ -46,6 +46,10 @@ const TodoApp = () => {
     dispatch({ type: "DELETE_TODO", payload: id });
   }
 
+  const handleToggleTODO = (id) => {
+    dispatch({ type: "TOGGLE_TODO", payload: id });
+  }
+
   return (
     <div>
       <h1>TodoApp →	 ( {todos.length} )</h1>
@@ -60,7 +64,9 @@ const TodoApp = () => {
                   id='list-group-item'
                   className='relative block py-3 px-6 -mb-px '
                   key={id}>
-                  <p className={`text-center ${done && 'line-through'}`}>
+                  <p
+                    className={`text-center ${done && 'line-through'}`}
+                    onClick={() => handleToggleTODO(id)} >
                     {i + 1}. {description}
                   </p>
                   <button
