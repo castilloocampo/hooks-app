@@ -1,0 +1,52 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply p-50px;
+  }
+
+  hr {
+    @apply my-5;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h4 {
+    @apply text-lg font-semibold;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  p {
+    @apply cursor-pointer;
+  }
+
+  #list-group-item {
+    @apply flex items-center justify-between;
+  }
+  
+  .btn {
+    @apply inline-block align-middle text-center select-none border font-normal whitespace-nowrap rounded py-1 px-3 leading-normal no-underline mt-1;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+
+  .btn-block {
+    @apply block w-full;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700;
+  }
+
+  .btn-outline-primary {
+    @apply text-blue-600 border-blue-600 hover:text-white bg-white hover:bg-blue-600;
+  }
+  
+}

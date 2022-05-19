@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       padding: {
-        '75px': '75px'
+        '75px': '75px',
+        '50px': '50px',
       }
     },
   },
