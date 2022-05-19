@@ -5,6 +5,7 @@ import './styles.css'
 import todoReducer from './todoReducer';
 import useForm from '../../hooks/useForm';
 import { useEffect } from 'react';
+import TodoList from './TodoList';
 
 
 const initialState = [];
@@ -57,27 +58,7 @@ const TodoApp = () => {
 
       <div className='flex'>
         <div className='w-3/5'>
-          <ul>
-            {
-              todos.map(({ id, description, done }, i) =>
-                <li
-                  id='list-group-item'
-                  className='relative block py-3 px-6 -mb-px '
-                  key={id}>
-                  <p
-                    className={`text-center ${done && 'line-through'}`}
-                    onClick={() => handleToggleTODO(id)} >
-                    {i + 1}. {description}
-                  </p>
-                  <button
-                    className='btn btn-danger'
-                    onClick={() => handleDeleteTODO(id)} >
-                    Borrar
-                  </button>
-                </li>
-              )
-            }
-          </ul>
+          <TodoList todos={todos} onHandleToggleTODO={handleToggleTODO} onHandleDeleteTODO={handleDeleteTODO} />
         </div>
         <div>
           <h4>Agregar TODO</h4>
