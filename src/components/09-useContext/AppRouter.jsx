@@ -20,14 +20,16 @@ const AppRouter = () => {
     <Router>
       <div>
         <NavBar />
+        <div className='container mx-auto sm:px-4'>
+          <Routes>
+            <Route path='about' element={<AboutScreen />} />
+            <Route path='login' element={<LoginScreen />} />
+            <Route path='/' element={<HomeScreen />} />
+            <Route path='*' element={<Navigate to={`/`} />} />
 
-        <Routes>
-          <Route path='about' element={<AboutScreen />} />
-          <Route path='login' element={<LoginScreen />} />
-          <Route path='/' element={<HomeScreen />} />
-          <Route path='*' element={<Navigate to={`/`} />} />
+          </Routes>
 
-        </Routes>
+        </div>
       </div>
     </Router>
   );
