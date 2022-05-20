@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HookApp should load correctly 1`] = `
+<div>
+  <div>
+    <h1>
+      HooksApp
+    </h1>
+  </div>
+</div>
+`;
