@@ -9,7 +9,7 @@ const MultipleCustomHooks = () => {
   const { author, quote } = !!data && data[0];
   return (
     <div>
-      <h1 className=''>BreakingBad Quotes</h1>
+      <h1 >BreakingBad Quotes</h1>
       <hr className='my-4' />
 
       {
@@ -20,13 +20,16 @@ const MultipleCustomHooks = () => {
             Loading
           </div>
         ) : (
-          <blockquote className={`mb-6 text-lg text-right animate__animated ${loading ? 'animate__fadeOut animate__delay-1s' : 'animate__fadeIn'} h-14`}>
+          <blockquote 
+            data-testid='blockquote'
+            className={`mb-6 text-lg text-right animate__animated ${loading ? 'animate__fadeOut animate__delay-1s' : 'animate__fadeIn'} h-14`}>
             <p className='mb-0'> {quote} </p>
             <footer className='block text-gray-400'> –– {author} </footer>
           </blockquote>
         )
       }
       <button
+        data-testid='button-next-quote'
         className='inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600'
         onClick={increment} >Siguiente quote</button>
     </div>

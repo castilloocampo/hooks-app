@@ -3,9 +3,7 @@
 exports[`MultipleCustomHooks should show correctly 1`] = `
 <div>
   <div>
-    <h1
-      class=""
-    >
+    <h1>
       BreakingBad Quotes
     </h1>
     <hr
@@ -19,6 +17,7 @@ exports[`MultipleCustomHooks should show correctly 1`] = `
     </div>
     <button
       class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600"
+      data-testid="button-next-quote"
     >
       Siguiente quote
     </button>

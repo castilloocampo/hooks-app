@@ -1,12 +1,12 @@
 import '@testing-library/jest-dom'
 
 import { render, screen } from "@testing-library/react"
-import MultipleCustomHooks from '../../components/03-examples/MultipleCustomHooks';
-import useFetch from '../../hooks/useFetch';
-import useCounter from '../../hooks/useCounter';
+import MultipleCustomHooks from '../../../components/03-examples/MultipleCustomHooks';
+import useFetch from '../../../hooks/useFetch';
+import useCounter from '../../../hooks/useCounter';
 
-jest.mock('../../hooks/useFetch');
-jest.mock('../../hooks/useCounter');
+jest.mock('../../../hooks/useFetch');
+jest.mock('../../../hooks/useCounter');
 
 describe('MultipleCustomHooks', () => {
   beforeEach(()=>{

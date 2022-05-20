@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RealExampleRef should show correctly 1`] = `
+<div>
+  <div>
+    <h1>
+      RealExampleRef
+    </h1>
+    <hr />
+    <button
+      class="mt-5 inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white active:bg-blue-900 "
+      data-testid="button-multiplecustomhook"
+    >
+      Toggle Component
+    </button>
+  </div>
+</div>
+`;
