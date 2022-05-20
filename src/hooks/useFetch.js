@@ -11,12 +11,12 @@ const useFetch = (url = "") => {
       isMounted.current = false;
     }
   }, []);
-  
+
   useEffect(() => {
     setState(initialState);
     fetch(url)
-    .then(response => response.json())
-    .then(data => {
+      .then(response => response.json())
+      .then(data => {
         isMounted.current && setState(() => {
           return {
             loading: false,
@@ -25,7 +25,7 @@ const useFetch = (url = "") => {
           }
         });
       })
-      .catch(()=>{
+      .catch(() => {
         setState(() => {
           return {
             data: null,

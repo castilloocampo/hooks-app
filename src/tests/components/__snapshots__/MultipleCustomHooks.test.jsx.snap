@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultipleCustomHooks should show correctly 1`] = `
+<div>
+  <div>
+    <h1
+      class=""
+    >
+      BreakingBad Quotes
+    </h1>
+    <hr
+      class="my-4"
+    />
+    <div
+      class="relative px-3 py-3 mb-4 border rounded bg-teal-200 border-teal-300 text-teal-800 text-center animate__animated animate__fadeOutLeft animate__slower"
+      data-testid="loading"
+    >
+      Loading
+    </div>
+    <button
+      class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600"
+    >
+      Siguiente quote
+    </button>
+  </div>
+</div>
+`;

@@ -14,7 +14,9 @@ const MultipleCustomHooks = () => {
 
       {
         loading ? (
-          <div className={`relative px-3 py-3 mb-4 border rounded bg-teal-200 border-teal-300 text-teal-800 text-center animate__animated animate__fadeOutLeft animate__slower`} >
+          <div
+            data-testid='loading' 
+            className={`relative px-3 py-3 mb-4 border rounded bg-teal-200 border-teal-300 text-teal-800 text-center animate__animated animate__fadeOutLeft animate__slower`} >
             Loading
           </div>
         ) : (
