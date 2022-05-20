@@ -1,22 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-
 const NavBar = () => {
-  {/* <nav>
-    <ul>
-      <li>
-        <Link to={`/`}> Home </Link>
-      </li>
-      <li>
-        <Link to={`/about`}> About </Link>
-      </li>
-      <li>
-        <Link to={`/login`}> Login </Link>
-      </li>
-    </ul>
-</nav> */}
 
   const isActive = ({ isActive }) => {
     return `inline-block py-2 px-4 no-underline ${isActive ? 'text-gray-100' : 'text-gray-400'}`

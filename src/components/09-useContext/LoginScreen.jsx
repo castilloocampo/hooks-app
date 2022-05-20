@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { UserContext } from './UserContext';
 
 const LoginScreen = () => {
-  const { user, setUser} = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
 
   const handleLogin = () => setUser({
     id: new Date().getTime(),
@@ -14,7 +14,7 @@ const LoginScreen = () => {
     <div>
       <h1>LoginScreen</h1>
       <hr />
-      <button 
+      <button
         className='btn btn-primary'
         onClick={handleLogin} >Login</button>
     </div>

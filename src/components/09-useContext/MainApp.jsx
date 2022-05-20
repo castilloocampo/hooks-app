@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import AppRouter from './AppRouter';
 import { UserContext } from './UserContext';
 
@@ -16,11 +15,5 @@ const MainApp = () => {
     </UserContext.Provider>
   );
 };
-
-
-MainApp.propTypes = {
-
-};
-
 
 export default MainApp;
