@@ -37,7 +37,6 @@ describe('todoReducer', () => {
 
   test('should be toggle ToDo element', () => {
     const [oldTodo] = demoTodos;
-    console.log(oldTodo);
     const action = {
       type: 'TOGGLE_TODO',
       payload: 1

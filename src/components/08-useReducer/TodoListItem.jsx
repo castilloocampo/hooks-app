@@ -9,11 +9,13 @@ const TodoListItem = ({ todo, index, onHandleDeleteTODO, onHandleToggleTODO }) =
       className='relative block py-3 px-6 -mb-px '
       key={id}>
       <p
+        data-testid="p-list-item"
         className={`text-center ${done && 'line-through'}`}
         onClick={() => onHandleToggleTODO(id)} >
         {index + 1}. {description}
       </p>
       <button
+        data-testid="delete-button"
         className='btn btn-danger'
         onClick={() => onHandleDeleteTODO(id)} >
         Borrar

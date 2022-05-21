@@ -1,9 +1,9 @@
 export const demoTodos = [{
   id: 1,
-  descripcion: 'Learn React',
+  description: 'Learn React',
   done: false
 }, {
   id: 2,
-  descripcion: 'Learn Mongo',
+  description: 'Learn Mongo',
   done: false
 }];
