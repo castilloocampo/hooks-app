@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import TodoListItem from '../../../components/08-useReducer/TodoListItem';
 import { demoTodos } from '../../fixtures/demoTodos';
 
@@ -26,7 +26,7 @@ describe('TodoListItem', () => {
     rerender = tempRender.rerender;
   });
 
-  afterEach(() =>{
+  afterEach(() => {
     cleanup();
   })
 
@@ -64,10 +64,8 @@ describe('TodoListItem', () => {
       onHandleDeleteTODO={fnDelete}
       onHandleToggleTODO={fnToggle}
     />);
-    const listitem = container.querySelector('#list-group-item')
-    const paragToggle = screen.getByTestId('p-list-item');
-    expect(paragToggle).toHaveClass('line-through');
-    expect(listitem.contains(paragToggle)).toBe(true);
+    const parag = screen.getByTestId('p-list-item');
+    expect(parag).toHaveClass('line-through');
   });
 
 });

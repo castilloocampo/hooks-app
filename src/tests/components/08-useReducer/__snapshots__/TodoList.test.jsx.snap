@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList should show correctly 1`] = `
+<div>
+  <ul>
+    <li
+      class="relative block py-3 px-6 -mb-px "
+      id="list-group-item"
+    >
+      <p
+        class="text-center false"
+        data-testid="p-list-item"
+      >
+        1
+        . 
+        Learn React
+      </p>
+      <button
+        class="btn btn-danger"
+        data-testid="delete-button"
+      >
+        Borrar
+      </button>
+    </li>
+    <li
+      class="relative block py-3 px-6 -mb-px "
+      id="list-group-item"
+    >
+      <p
+        class="text-center false"
+        data-testid="p-list-item"
+      >
+        2
+        . 
+        Learn Mongo
+      </p>
+      <button
+        class="btn btn-danger"
+        data-testid="delete-button"
+      >
+        Borrar
+      </button>
+    </li>
+  </ul>
+</div>
+`;

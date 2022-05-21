@@ -7,7 +7,7 @@ const TodoListItem = ({ todo, index, onHandleDeleteTODO, onHandleToggleTODO }) =
     <li
       id='list-group-item'
       className='relative block py-3 px-6 -mb-px '
-      key={id}>
+    >
       <p
         data-testid="p-list-item"
         className={`text-center ${done && 'line-through'}`}
