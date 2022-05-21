@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoAdd component should show correctly 1`] = `
+<div>
+  <h4>
+    Agregar TODO
+  </h4>
+  <hr />
+  <form
+    data-testid="form-todoadd"
+  >
+    <input
+      autocomplete="off"
+      data-testid="input-todoadd"
+      name="description"
+      placeholder="Aprender..."
+      type="text"
+      value=""
+    />
+    <button
+      class="btn btn-outline-primary w-full"
+      data-testid="button-todoadd"
+      type="submit"
+    >
+      Agregar
+    </button>
+  </form>
+</div>
+`;

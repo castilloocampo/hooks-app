@@ -27,18 +27,25 @@ const TodoAdd = ({ onHandleAddTodo }) => {
     <>
       <h4>Agregar TODO</h4>
       <hr />
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        data-testid="form-todoadd"
+      >
         <input
           type="text"
           name="description"
           placeholder="Aprender..."
           autoComplete="off"
           value={description}
-          onChange={handleInputChange} />
+          onChange={handleInputChange}
+          data-testid="input-todoadd"
+        />
 
         <button
           type='submit'
-          className='btn btn-outline-primary w-full' >
+          className='btn btn-outline-primary w-full'
+          data-testid="button-todoadd"
+        >
           Agregar
         </button>
       </form>
