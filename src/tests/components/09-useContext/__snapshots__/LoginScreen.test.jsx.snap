@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Screen should show correctly 1`] = `
+<div>
+  <div>
+    <h1>
+      LoginScreen
+    </h1>
+    <hr />
+    <button
+      class="btn btn-primary"
+    >
+      Login
+    </button>
+  </div>
+</div>
+`;
