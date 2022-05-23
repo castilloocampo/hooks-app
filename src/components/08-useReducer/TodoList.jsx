@@ -8,6 +8,7 @@ const TodoList = ({ todos, onHandleToggleTODO, onHandleDeleteTODO }) => {
       {
         todos.map((todo, i) =>
           <TodoListItem 
+            data-testid="todo-list-item"
             key={todo.id}
             todo={todo} 
             index={i} 

@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoApp component should add todo from this component 1`] = `
+<div>
+  <div>
+    <h1>
+      TodoApp →  ( 
+      2
+       )
+    </h1>
+    <hr />
+    <div
+      class="flex"
+    >
+      <div
+        class="w-3/5"
+      >
+        <ul>
+          <li
+            class="relative block py-3 px-6 -mb-px "
+            id="list-group-item"
+          >
+            <p
+              class="text-center false"
+              data-testid="p-list-item"
+            >
+              1
+              . 
+              Learn something
+            </p>
+            <button
+              class="btn btn-danger"
+              data-testid="delete-button"
+            >
+              Borrar
+            </button>
+          </li>
+          <li
+            class="relative block py-3 px-6 -mb-px "
+            id="list-group-item"
+          >
+            <p
+              class="text-center false"
+              data-testid="p-list-item"
+            >
+              2
+              . 
+              Learn something more
+            </p>
+            <button
+              class="btn btn-danger"
+              data-testid="delete-button"
+            >
+              Borrar
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="w-2/5"
+      >
+        <h4>
+          Agregar TODO
+        </h4>
+        <hr />
+        <form
+          data-testid="form-todoadd"
+        >
+          <input
+            autocomplete="off"
+            data-testid="input-todoadd"
+            name="description"
+            placeholder="Aprender..."
+            type="text"
+            value=""
+          />
+          <button
+            class="btn btn-outline-primary w-full"
+            data-testid="button-todoadd"
+            type="submit"
+          >
+            Agregar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TodoApp component should show correctly 1`] = `
+<div>
+  <div>
+    <h1>
+      TodoApp →  ( 
+      0
+       )
+    </h1>
+    <hr />
+    <div
+      class="flex"
+    >
+      <div
+        class="w-3/5"
+      >
+        <ul />
+      </div>
+      <div
+        class="w-2/5"
+      >
+        <h4>
+          Agregar TODO
+        </h4>
+        <hr />
+        <form
+          data-testid="form-todoadd"
+        >
+          <input
+            autocomplete="off"
+            data-testid="input-todoadd"
+            name="description"
+            placeholder="Aprender..."
+            type="text"
+            value=""
+          />
+          <button
+            class="btn btn-outline-primary w-full"
+            data-testid="button-todoadd"
+            type="submit"
+          >
+            Agregar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

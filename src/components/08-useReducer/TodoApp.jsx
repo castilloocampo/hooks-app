@@ -38,11 +38,20 @@ const TodoApp = () => {
       <hr />
 
       <div className='flex'>
-        <div className='w-3/5'>
-          <TodoList todos={todos} onHandleToggleTODO={handleToggleTODO} onHandleDeleteTODO={handleDeleteTODO} />
+        <div
+          className='w-3/5'>
+          <TodoList
+            data-testid="todo-list"
+            todos={todos}
+            onHandleToggleTODO={handleToggleTODO}
+            onHandleDeleteTODO={handleDeleteTODO}
+          />
         </div>
         <div className='w-2/5'>
-          <TodoAdd onHandleAddTodo={handleAddTODO} />
+          <TodoAdd
+            data-testid="add-todo"
+            onHandleAddTodo={handleAddTODO}
+          />
         </div>
 
       </div>

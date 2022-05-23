@@ -26,10 +26,10 @@ describe('RealExampleRef', () => {
     await waitFor(() => {
       load = screen.queryByTestId('loading');
       expect(load).toBe(null);
-      quote = screen.queryByTestId('blockquote').textContent
-      buttonNext = screen.queryByTestId('button-next-quote');
     });
-
+    quote = screen.queryByTestId('blockquote').textContent
+    buttonNext = screen.queryByTestId('button-next-quote');
+      
     //Se Solicita mostrar nuevo elemento
     fireEvent.click(buttonNext);
 
